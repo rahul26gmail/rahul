@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .window1{
+               border: 2px solid black;
+               height: 150px;
+               width: 220px;
+               
+               position: relative;
+               left: 35px;
+               top:40px;
+               border-top-left-radius: 30px;
+               background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoUCPatsVkRIgt7bOTk3LJ3gdqU6K7qOh0g&usqp=CAU);       
+               background-size: 400px 200px;
+
+               background-repeat: no-repeat;
+          }
+          .window2{
+               border: 2px solid black;
+               height: 150px;
+               width: 180px;
+              background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoUCPatsVkRIgt7bOTk3LJ3gdqU6K7qOh0g&usqp=CAU);
+               position:relative;
+               left: 260px;
+               top:-114px;
+               border-top-right-radius: 30px;
+               
+               
+          }
+         
+          .main{
+               border: 2px solid black;
+               height: 300px;
+               width: 500px;
+               background-color: #42db42;
+               border-top-right-radius: 80px;
+               border-top-left-radius: 40px;
+               margin-top: 200px;
+               margin-left: 400px;
+          }
+          .while1{
+               border: 2px solid rgb(40, 2, 2);
+               background:linear-gradient(
+    to right,
+    pink 0%,
+    pink 50%,
+    paleturquoise 50%,
+    paleturquoise 100%
+  ); 
+               height: 100px;
+               width: 100px;
+               border-radius: 50%;
+               position: relative;
+               left: 50px;
+               top:-45px;
+               animation: rotateBox 1ms linear infinite;
+          }
+ 
+          
+          .while2{
+               border: 2px solid rgb(40, 2, 2);
+               background:linear-gradient(
+    to right,
+    pink 0%,
+    pink 50%,
+    paleturquoise 50%,
+    paleturquoise 100%
+  );
+               height: 100px;
+               width: 100px;
+               border-radius: 50%;
+               position: relative;
+               left: 350px;
+               top:-150px;
+               animation: rotateBox 1ms linear infinite;
+          }
+          
+          @keyframes rotateBox {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.road{
+     background-color: #2aa0be;
+     border: 1px solid black;
+     height: 100px;
+     width: 100vw;
+}
+.line{
+     background:linear-gradient(
+    to right,
+    rgb(15, 12, 13) 0%,
+    rgb(15, 12, 13) 15%,
+    rgb(255, 255, 255) 15%,
+    rgb(255, 255, 255) 30%,
+    rgb(9, 44, 44) 30%,
+    rgb(9, 44, 44) 45%,
+    rgb(255, 255, 255) 45%,
+    rgb(255, 255, 255) 60%,
+    rgb(9, 44, 44) 60%,
+    rgb(9, 44, 44) 75%,
+    rgb(255, 255, 255) 75%,
+    rgb(255, 255, 255) 90%,
+    rgb(9, 44, 44) 90%,
+    rgb(9, 44, 44) 100%
+   
+  );
+   
+     border: 1px solid black;
+     margin:50px ;
+     height: 5px;
+  
+}
+          
+     </style>
+</head>
+<body>
+     
+     <div class="main">
+          <div class="window1"></div>
+     <div class="window2"></div>
+          <div class="while1"></div>
+     <div class="while2"></div>
+     </div>
+     <div class="road">
+          <div class="line"></div>
+     </div>
+     
+     
+</body>
+</html>
